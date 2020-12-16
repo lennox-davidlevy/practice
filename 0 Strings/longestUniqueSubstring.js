@@ -18,8 +18,6 @@
 // Notice that the answer must be a substring, "pwke" is a subsequence and not a substring.
 // Example 4:
 
-// Input: s = ""
-// Output: 0
 
 const lengthOfLongestSubstring = (str) => {
   let len = str.length;
@@ -37,3 +35,4 @@ const lengthOfLongestSubstring = (str) => {
   }
   return result;
 };
+
