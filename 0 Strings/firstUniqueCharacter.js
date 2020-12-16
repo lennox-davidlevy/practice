@@ -9,7 +9,7 @@
 // return 2.
 
 const firstUnique = (str) => {
-  if (str.length === 0) return -1;
+  if (!str || str.length === 0) return -1;
   if (str.length === 1) return 0;
   const dict = {};
   for (let i = 0; i < str.length; i++) {
