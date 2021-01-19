@@ -15,3 +15,14 @@
 
 # Input: digits = "2"
 # Output: ["a","b","c"]
+def letter_combinations():
+    num_letter_hash = {
+        2: "abc",
+        3: "def",
+        4: "ghi",
+        5: "jkl",
+        6: "mno",
+        7: "pqrs",
+        8: "tuv",
+        9: "wxyz",
+    }

@@ -16,7 +16,21 @@
 # Output: 1
 
 
+# def single_number(arr):
+#    if len(arr) == 1:
+#        return arr[0]
+#    num_hash = {}
+#    for num in arr:
+#        num_hash[num] = num_hash.get(num, 0) + 1
+#    for num, val in num_hash.items():
+#        if val == 1:
+#            return num
+#    return None
+
+
 def single_number(arr):
+    if len(arr) == 0:
+        return None
     if len(arr) == 1:
         return arr[0]
     num_hash = {}
@@ -25,7 +39,6 @@ def single_number(arr):
     for num, val in num_hash.items():
         if val == 1:
             return num
-    return None
 
 
 print(single_number([2, 2, 1]))

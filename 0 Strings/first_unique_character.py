@@ -7,3 +7,19 @@
 
 # // s = "loveleetcode",
 # // return 2.
+from collections import defaultdict
+
+
+def first_unique(string):
+    if len(string) == 0:
+        return None
+    if len(string) == 1:
+        return string[0]
+    char_hash = defaultdict(int)
+    for char in string:
+        char_hash[char] += 1
+    print(char_hash)
+
+
+first_unique("leetcode")
+print("fun")
